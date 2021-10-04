@@ -1,16 +1,16 @@
 USE codeup_test_db;
 
-CREATE TABLE albums(
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    artist_name VARCHAR(50) NOT NULL,
-    album_name VARCHAR(50)NOT NULL,
-    release_year SMALLINT SIGNED,
-    genre VARCHAR(50) NOT NULL,
-    decimal_number DOUBLE SIGNED,
-    PRIMARY KEY (id)
-);
+# CREATE TABLE albums(
+#     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+#     artist_name VARCHAR(50) NOT NULL,
+#     album_name VARCHAR(50)NOT NULL,
+#     release_year SMALLINT SIGNED,
+#     genre VARCHAR(50) NOT NULL,
+#     decimal_number DOUBLE SIGNED,
+#     PRIMARY KEY (id)
+# );
 
-INSERT INTO albums(artist_name, album_name, release_year, genre, decimal_number) VALUES
+INSERT INTO albums(artist, name, release_date, genre, sales) VALUES
 ('Michael Jackson','Thriller',1982,'Pop/Rock/R&B',47.3),
 ('AC/DC','Back in Black',1980,'Hard Rock',26.1),
 ('Pink Floyd','The Dark Side of the Moon',1973,'Progressive Rock',24.2),
