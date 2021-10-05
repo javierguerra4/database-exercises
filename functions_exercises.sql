@@ -66,4 +66,9 @@ SELECT first_name, last_name, DATEDIFF (CURDATE(), hire_date) FROM employees
 WHERE  year(hire_date)  BETWEEN 1990 AND 1999
   AND  month(birth_date) = 12
   AND day(birth_date) = 25
-ORDER BY birth_date ASC, hire_date DESC;;
+ORDER BY birth_date ASC, hire_date DESC;
+
+# Mini Exercise How many salaries are at a given amount?
+SELECT salary, COUNT(*)FROM salaries
+GROUP BY salary
+ORDER BY COUNT(*);
