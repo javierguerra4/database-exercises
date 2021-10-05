@@ -7,7 +7,7 @@ DESCRIBE employees;
 
 SELECT * FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya')
-AND gender = 'M'
+  AND gender = 'M'
 ORDER BY first_name;
 
 # #Find all employees whose last name starts with 'E'
@@ -21,9 +21,29 @@ ORDER BY first_name, last_name;
 # SELECT * FROM employees
 # WHERE last_name LIKE 'e%';
 
+
+SELECT * FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+
+ORDER BY last_name, first_name;
+
 #Find all employees with a 'q' in their last name
 # SELECT * FROM employees
 # WHERE last_name LIKE '%q%';
+
+SELECT * FROM employees
+WHERE last_name LIKE '%e%' ORDER BY emp_no DESC;
+
+
+
+
+
+
+
+
+
+
+
 
 #Update your query for 'Irena', 'Vidya', or 'Maya' to use OR instead of IN
 
