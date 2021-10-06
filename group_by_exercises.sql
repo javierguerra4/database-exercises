@@ -1,7 +1,7 @@
 use employees;
 
 #In your script, use DISTINCT to find the unique titles in the titles table. Your results should look like:
-SELECT DISTINCT title, COUNT(*) FROM titles
+SELECT DISTINCT title FROM titles
 GROUP BY title;
 
 #Find your query for employees whose last names start and end with 'E'. Update the query to find just the unique last names that start and end with 'E' using GROUP BY. The results should be:
